@@ -17,15 +17,15 @@ A powerful, data-driven resume generation system built with **Python** and **Qua
 
 ```text
 public-resume-builder/
-├── builder.py            # 🛠️ The build script
-├── resources/            # 📚 Helper resources and examples
-├── cv_versions/          # 📄 Resume versions live here
-│   ├── example_candidate/  # 🟢 Start here! A template for you
-│   │   ├── resume_data.json
-│   │   └── resume_template.qmd.j2
-│   └── data_product_manager/ # 🔵 A real-world example (Sample)
-├── requirements.txt      # 📦 Python dependencies
-└── README.md             # 📖 You are here
+|-- builder.py            # The build script
+|-- resources/            # Helper resources and examples
+|-- cv_versions/          # Resume versions live here
+|   |-- example_candidate/  # Start here! A template for you
+|   |   |-- resume_data.json
+|   |   `-- resume_template.qmd.j2
+|   `-- data_product_manager/ # A real-world example (Sample)
+|-- requirements.txt      # Python dependencies
+`-- README.md             # You are here
 ```
 
 ## 🛠️ Tech Stack & System Setup
