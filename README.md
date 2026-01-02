@@ -133,6 +133,10 @@ I am currently open to **Product Management** roles where I can combine strategi
 * **Connect on LinkedIn**: [Danial Bahrambeygi](https://bit.ly/DaniPM_LI)
 * **View My Resume**: [Latest PDF](cv_versions/data_product_manager/cv_dani_general_resume_2026-01.pdf)
 
-## 📄 License
+## � Acknowledgements
+
+This project was originally forked from and inspired by the excellent [CV_Quarto](https://github.com/acbass49/CV_Quarto) repository by [acbass49](https://github.com/acbass49).
+
+## �📄 License
 
 This project is licensed under the MIT License.
