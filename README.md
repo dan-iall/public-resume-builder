@@ -1,4 +1,4 @@
-# Quarto Resume Builder 🚀
+# Quarto Resume Builder
 
 A powerful, data-driven resume generation system built with **Python** and **Quarto**. This tool allows you to treat your resume as code, version control your career history, and generate beautiful, ATS-friendly PDFs tailored to specific roles or companies.
 
@@ -6,14 +6,14 @@ A powerful, data-driven resume generation system built with **Python** and **Qua
 ![Quarto](https://img.shields.io/badge/Quarto-1.3%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-## 🌟 Why Use This?
+## Why Use This?
 
 * **Data-Driven**: Separate content (`JSON`) from design (`Jinja2`/`Quarto`), enabling easy updates without formatting headaches.
 * **Version Control**: Manage different versions of your resume (e.g., Data Analyst vs. Product Manager) as separate subdirectories.
 * **Tailored Outputs**: Quickly generate custom PDFs for specific job applications.
 * **Professional Design**: Uses LaTeX under the hood via Quarto for crisp, professional typography.
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```text
 public-resume-builder/
@@ -28,7 +28,7 @@ public-resume-builder/
 `-- README.md             # You are here
 ```
 
-## 🛠️ Tech Stack & System Setup
+## Tech Stack & System Setup
 
 This project uses a modern, open-source stack to generate high-quality documents:
 
@@ -56,7 +56,7 @@ This project uses a modern, open-source stack to generate high-quality documents
     pip install -r requirements.txt
     ```
 
-## 🚀 How to Use
+## How to Use
 
 ### 1. Create Your Version
 
@@ -90,7 +90,7 @@ python builder.py
 Your generated PDF will be located inside your version folder, named automatically based on your metadata:
 `cv_versions/my_resume/resume_[company]_[role]_[date].pdf`
 
-## ✨ Features
+## Features
 
 ### Flexible Skill Groups
 
@@ -107,11 +107,11 @@ Don't get locked into "Hard Skills" vs "Soft Skills". Define your own categories
 
 The builder automatically appends dates and target roles to filenames, so you never send the wrong resume (e.g., `resume_google_pm_2024-01.pdf`).
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 🤖 Unlock the AI Agent
+## Unlock the AI Agent
 
 This repository comes with a "Resume Consultant" persona designed to work with your LLM (ChatGPT, Claude, etc.).
 
@@ -122,7 +122,7 @@ This repository comes with a "Resume Consultant" persona designed to work with y
 
 The Agent will now act as your personal **Career Architect**, helping you tailor your resume JSON for specific job descriptions while ensuring you stay true to your actual skills.
 
-## 👨‍💻 About the Author
+## About the Author
 
 **Danial Bahrambeygi** is a Product Manager & Data Scientist who builds tools to solve complex problems—including the job search itself.
 
@@ -133,10 +133,10 @@ I am currently open to **Product Management** roles where I can combine strategi
 * **Connect on LinkedIn**: [Danial Bahrambeygi](https://bit.ly/DaniPM_LI)
 * **View My Resume**: [Latest PDF](cv_versions/data_product_manager/cv_dani_general_resume_2026-01.pdf)
 
-## � Acknowledgements
+## Acknowledgements
 
 This project was originally forked from and inspired by the excellent [CV_Quarto](https://github.com/acbass49/CV_Quarto) repository by [acbass49](https://github.com/acbass49).
 
-## �📄 License
+## License
 
 This project is licensed under the MIT License.
