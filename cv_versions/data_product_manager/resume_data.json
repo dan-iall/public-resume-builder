@@ -1,0 +1,174 @@
+{
+    "theme": {
+        "background": "FFFFFF",
+        "text": "000000",
+        "header": "003366",
+        "subheader": "808080",
+        "link": "0000EE"
+    },
+    "basics": {
+        "name": "Danial Bahrambeygi",
+        "label": "Product Manager",
+        "email": "Danial.bahrambeygi@gmail.com",
+        "summary": "My obsession with the \"What If?\" led me to become a PM. My vision is to be a wizard at asking and helping others ask that question, find the hidden \"valuable, feasible, and achievable\" gems, and take the necessary steps to make that \"If\" a reality.",
+        "profiles": [
+            {
+                "network": "LinkedIn",
+                "url": "https://bit.ly/DaniPM_LI",
+                "username": "Danial Bahrambeygi"
+            }
+        ]
+    },
+    "work": [
+        {
+            "company": "UnternehmerTUM",
+            "position": "Product Manager",
+            "program": "Digital Product School",
+            "location": "Munich",
+            "startDate": "2023-09",
+            "endDate": "2023-12",
+            "url": "https://bit.ly/DaniAtDPS_LI",
+            "highlights": [
+                "Digital Product School program at UnternehmerTUM, focusing on AI, UX, and Agile methodologies for human-centred digital product development.",
+                "Developed a communication platform for the German Red Cross's Hausnotruf in a 3-month partnership with AWS, DPS, and the DRK.",
+                "Reduced dispatcher's reach time from 20 to 2 minutes by developing a specialized SMS portal.",
+                "Prevented 30% of emergency break-ins by ensuring timely contact with the right person.",
+                "Increased outreach by 5% by adding a translation feature to our AI-assisted text generator."
+            ]
+        },
+        {
+            "company": "Digikala Group",
+            "position": "Product Manager",
+            "location": "Tehran",
+            "startDate": "2020-12",
+            "endDate": "2022-09",
+            "url": "https://bit.ly/DaniAtDigikala_LI",
+            "highlights": [
+                "Digikala is the leading e-commerce platform in the Middle East. PIC of the outbound fulfillment product and part of the product trio responsible for translating Digikala's vision, stakeholder needs, and pain points into working solutions.",
+                "Led the expansion and optimization of fulfillment operations, resulting in a 30% increase in capacity and enabling fulfillment as a service.",
+                "Developed the \"item bundling\" feature, contributing to 3% of total sales within three months.",
+                "Achieved a 30% improvement in item reception efficiency at Hubs.",
+                "Reduced cardboard waste by 500 kg/month.",
+                "Enhanced the tracking system, achieving a 10% reduction in missing items."
+            ]
+        },
+        {
+            "company": "Shaya Smart Solutions",
+            "position": "Product Owner",
+            "location": "Tehran",
+            "startDate": "2020-05",
+            "endDate": "2020-11",
+            "url": "https://bit.ly/DaniAtShaya_LI",
+            "highlights": [
+                "Led the development of Kavan, a social listening tool empowering businesses to monitor their brand presence on major Persian-speaking platforms.",
+                "Delivered Kavan's Android app with new features, resulting in a 40% increase in daily active users.",
+                "In-house trained sentiment analysis for Farsi.",
+                "Reduced Twitter data update time from 30 minutes to 5 minutes.",
+                "Improved Kavan's user interface usability, resulting in a significant increase in NPS by 15 points."
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "University of Tehran",
+            "url": "https://bit.ly/DaniAtUT_LI",
+            "area": "MBA - Technology",
+            "studyType": "Master",
+            "score": "17.15/20",
+            "location": "Tehran",
+            "date": "2021-02"
+        },
+        {
+            "institution": "Amirkabir University of Technology",
+            "url": "https://bit.ly/DaniAtAUT_LI",
+            "area": "Mechanical Engineering Manufacturing and process",
+            "studyType": "Bachelor",
+            "location": "Tehran",
+            "date": "2018-09"
+        }
+    ],
+    "certificates": [
+        {
+            "name": "Python for Everybody Specialization",
+            "issuer": "University of Michigan",
+            "platform": "Coursera",
+            "date": "2020-04",
+            "url": "https://bit.ly/danialpython"
+        },
+        {
+            "name": "TOEFL iBT",
+            "score": "104 (C1 Level, Top 20% of Global Participants)",
+            "issuer": "ETS",
+            "date": "2021-12",
+            "url": "https://www.ets.org/toefl/score-users/ibt/use-scores.html#ScoreUseResearch"
+        },
+        {
+            "name": "Data Science Orientation",
+            "issuer": "IBM",
+            "platform": "Coursera",
+            "date": "2020-05",
+            "url": "https://bit.ly/danialdata"
+        },
+        {
+            "name": "Mathematics for Machine Learning",
+            "issuer": "Imperial College London",
+            "platform": "Coursera",
+            "date": "2020-02",
+            "url": "https://coursera.org/share/fce1cd8b38c8b07ced910dbae334b6d2"
+        },
+        {
+            "name": "Financial Accounting",
+            "issuer": "University of Illinois",
+            "platform": "Coursera",
+            "date": "2022-12",
+            "url": "https://bit.ly/Dani_CourseraFinAcct"
+        }
+    ],
+    "skill_groups": [
+        {
+            "name": "Strategic",
+            "keywords": [
+                "Product Strategy (Working Backwards)",
+                "Strategic Diagnosis & Opportunity Sizing",
+                "Systems Thinking & Leverage Analysis",
+                "User Story Mapping",
+                "Stakeholder Alignment & Negotiation",
+                "Impact-Based Prioritization",
+                "Agile Discovery-to-Delivery Cycles",
+                "Cross-Functional Leadership",
+                "Value Proposition Design"
+            ]
+        },
+        {
+            "name": "Data & AI",
+            "keywords": [
+                "Problem Formulation & Hypothesis Design",
+                "Exploratory Data Analysis (EDA)",
+                "Time Series Forecasting (ARIMA/VAR)",
+                "Probability & Classification Models",
+                "Causal Inference & Experimentation (DiD)",
+                "Rapid Agentic Prototyping"
+            ]
+        },
+        {
+            "name": "Product Stack",
+            "keywords": [
+                "Jira (Tracking)",
+                "GitHub Issues",
+                "Confluence / Notion",
+                "Figma",
+                "Miro"
+            ]
+        },
+        {
+            "name": "Tech Stack",
+            "keywords": [
+                "Python (Pandas, PyFixest, Linearmodels, Statsmodels)",
+                "Scikit-learn (ML Pipelines)",
+                "SQL",
+                "Agentic Workflow Design (LLMs)",
+                "Visualization (Tableau, Plotnine)"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,137 @@
+---
+format: 
+  pdf: 
+    documentclass: article
+    geometry:
+      - a3paper
+      - top=14mm
+      - left=15mm
+      - right=15mm
+      - bottom=10mm
+      - heightrounded
+    fontfamily: libertine
+    colorlinks: true
+    fontsize: '16'
+    include-in-header: 
+      text: |
+        \usepackage{multicol}
+        \usepackage{lipsum}
+        \usepackage{hyperref}
+        \usepackage{libertine}
+        \usepackage{wrapfig}
+        \usepackage[table]{xcolor}
+        \usepackage{fontawesome5}
+        \pagestyle{empty}
+        \setlength{\multicolsep}{2pt plus 1.0pt minus 0.75pt}% 50% of original values
+        \setlength{\columnsep}{3em}
+        
+        % Define Colors from JSON
+        \definecolor{pagebg}{HTML}{ {{ theme.background }} }
+        \definecolor{textmain}{HTML}{ {{ theme.text }} }
+        \definecolor{textheader}{HTML}{ {{ theme.header }} }
+        \definecolor{textsub}{HTML}{ {{ theme.subheader }} }
+        \definecolor{linkcolor}{HTML}{ {{ theme.link }} }
+        
+        % Apply Background
+        \pagecolor{pagebg}
+        % Apply Text Color
+        \color{textmain}
+        
+        % Hyperlink Setup
+        \hypersetup{
+          colorlinks=true,
+          linkcolor=linkcolor,
+          urlcolor=linkcolor,
+        }
+
+        % Spacing Adjustments
+        \linespread{1.15} % Increase general line spacing
+        \setlength{\parskip}{3pt} % Add space between paragraphs
+
+---
+<!-- TITLE & CONTACT -->
+\begin{center}
+  {\huge \bf \textcolor{textheader}{ {{ basics.name | upper }} }}\enspace
+  \href{mailto:{{ basics.email }} }{\textcolor{textheader}{\Large\faEnvelopeSquare}}\enspace
+  {% for profile in basics.profiles %}\href{ {{ profile.url }} }{\textcolor{textheader}{\Large\faLinkedinIn}}{% endfor %}
+\end{center}
+\vspace{5pt}
+
+<!-- SUMMARY -->
+{{ basics.summary }}
+
+\vspace{5pt}
+
+<!-- EXPERIENCE -->
+\begin{large}{\bf \textcolor{textheader}{WORK EXPERIENCE}}
+  \vspace{3pt}
+  {\color{textheader} \hrule height 1pt}
+\end{large}
+\vspace{2pt}
+{% for job in work %}
+\begin{large}
+  \begin{multicols}{2}
+    \begin{flushleft}
+      {\bf {{ job.company }} \href{ {{ job.url }} }{\textcolor{textheader}{\tiny\faExternalLink*}}}\\
+      \textit{ {{ job.position }} }
+    \end{flushleft}
+    \begin{flushright}
+    {{ job.startDate }} - {{ job.endDate }}\\
+    {{ job.location }}
+    \end{flushright}
+  \end{multicols}
+\end{large}
+\vspace{-0.05cm}
+{% for highlight in job.highlights %}* {{ highlight }}
+{% endfor %}
+\vspace{6pt}
+{% endfor %}
+\vspace{5pt}
+
+<!-- SKILLS -->
+{% if skill_groups %}
+\begin{large}{\bf \textcolor{textheader}{SKILLS \& TOOLS}}
+  \vspace{3pt}
+  {\color{textheader} \hrule height 1pt}
+\end{large}
+\vspace{2pt}
+{% for group in skill_groups %}
+**{{ group.name }}:** {{ group.keywords | join(', ') }}
+
+{% endfor %}
+\vspace{5pt}
+{% endif %}
+
+<!-- EDUCATION -->
+\begin{large}
+  {\bf \textcolor{textheader}{EDUCATION}}
+  \vspace{3pt}
+  {\color{textheader} \hrule height 1pt}
+\end{large}
+\vspace{2pt}
+{% for edu in education %}
+\begin{large}
+  \begin{multicols}{2}
+    \begin{flushleft}
+      {\bf {{ edu.institution }} \href{ {{ edu.url }} }{\textcolor{textheader}{\tiny\faExternalLink*}}}\\
+      {{ edu.area }} ({{ edu.score }})
+    \end{flushleft}
+    \begin{flushright}
+    {{ edu.date }}\\
+    {{ edu.location }}
+    \end{flushright}
+  \end{multicols}
+\end{large}
+\vspace{0.05cm}
+{% endfor %}
+\vspace{1.5pt}
+
+<!-- CERTIFICATES -->
+\begin{large}
+{\bf \textcolor{textheader}{CERTIFICATES}}
+  \vspace{3pt}
+  {\color{textheader} \hrule height 1pt}
+\end{large}
+\vspace{2pt}
+{% for cert in certificates %}* {{ cert.name }}{% if cert.score %} ({{ cert.score }}){% endif %} ({{ cert.issuer }}{% if cert.platform %}, {{ cert.platform }}{% endif %}) \href{ {{ cert.url }} }{\textcolor{textmain}{\tiny\faExternalLink*}} \hfill {{ cert.date }}
+{% endfor %}

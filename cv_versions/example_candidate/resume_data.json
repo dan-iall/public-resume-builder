@@ -1,0 +1,98 @@
+{
+    "meta": {
+        "company": "Example Corp",
+        "role": "Product Manager",
+        "date": "2026-01"
+    },
+    "theme": {
+        "background": "FFFFFF",
+        "text": "000000",
+        "header": "003366",
+        "subheader": "808080",
+        "link": "0000EE"
+    },
+    "basics": {
+        "name": "Alex Candidate",
+        "label": "Data Product Manager",
+        "email": "alex.candidate@example.com",
+        "summary": "Results-driven Product Manager with 5+ years of experience in building data-intensive products. Passionate about transforming complex data into actionable insights and user-centric solutions.",
+        "profiles": [
+            {
+                "network": "LinkedIn",
+                "url": "https://linkedin.com/in/alexcandidate",
+                "username": "Alex Candidate"
+            }
+        ]
+    },
+    "work": [
+        {
+            "company": "Tech Innovators Inc.",
+            "position": "Senior Product Manager",
+            "location": "San Francisco, CA",
+            "startDate": "2023-01",
+            "endDate": "Present",
+            "url": "https://example.com",
+            "highlights": [
+                "Led the development of a real-time analytics dashboard, increasing customer engagement by 40%.",
+                "Spearheaded a cross-functional team of 10 (Engineering, Design, Data Science) to deliver a new AI-powered recommendation engine.",
+                "Reduced churn by 15% through targeted feature improvements based on user behavior analysis."
+            ]
+        },
+        {
+            "company": "Data Solutions Co.",
+            "position": "Product Manager",
+            "location": "New York, NY",
+            "startDate": "2020-06",
+            "endDate": "2022-12",
+            "url": "https://example.com",
+            "highlights": [
+                "launched a SaaS data integration tool that generated $1M ARR in the first year.",
+                "Optimized onboarding flow, reducing time-to-value by 50%.",
+                "Conducted 50+ user interviews to identify key pain points and validate product roadmap."
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "University of Technology",
+            "area": "Computer Science",
+            "studyType": "Bachelor of Science",
+            "location": "Boston, MA",
+            "date": "2020-05"
+        }
+    ],
+    "certificates": [
+        {
+            "name": "Certified Product Manager (CPM)",
+            "issuer": "AIPMM",
+            "date": "2022"
+        },
+        {
+            "name": "Google Data Analytics Certificate",
+            "issuer": "Google",
+            "date": "2021"
+        }
+    ],
+    "skill_groups": [
+        {
+            "name": "Strategic",
+            "keywords": [
+                "Product Strategy",
+                "Roadmap Planning",
+                "Agile/Scrum",
+                "User Research",
+                "KPI Definition"
+            ]
+        },
+        {
+            "name": "Technical",
+            "keywords": [
+                "Python",
+                "SQL",
+                "Tableau",
+                "API Design",
+                "A/B Testing"
+            ]
+        }
+    ]
+}

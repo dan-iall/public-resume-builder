@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.DS_Store
+# Quarto generated files
+.quarto/
+*_files/
+resume.qmd
+resume.pdf
+
+# Ignore all generated PDFs by default
+*.pdf
+
+# Exception: Keep the specific golden sample
+!cv_versions/data_product_manager/cv_dani_general_resume_2026-01.pdf
