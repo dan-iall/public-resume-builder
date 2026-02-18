@@ -1,0 +1,55 @@
+---
+format:
+  pdf:
+    documentclass: article
+    geometry:
+      - a4paper
+      - top=20mm
+      - left=20mm
+      - right=20mm
+      - bottom=20mm
+    fontfamily: libertine
+    colorlinks: true
+    fontsize: '11'
+    include-in-header:
+      text: |
+        \usepackage{fontawesome5}
+        \usepackage{hyperref}
+        \usepackage[table]{xcolor}
+        \usepackage{libertine}
+        
+        \pagestyle{empty}
+        \setlength{\parindent}{0pt}
+        \setlength{\parskip}{1em}
+        
+        % Define Colors from JSON
+        \definecolor{pagebg}{HTML}{ {{ theme.background }} }
+        \definecolor{textmain}{HTML}{ {{ theme.text }} }
+        \definecolor{textheader}{HTML}{ {{ theme.header }} }
+        \definecolor{textsub}{HTML}{ {{ theme.subheader }} }
+        \definecolor{linkcolor}{HTML}{ {{ theme.link }} }
+        
+        % Apply Background
+        \pagecolor{pagebg}
+        % Apply Text Color
+        \color{textmain}
+        
+        % Hyperlink Setup
+        \hypersetup{
+          colorlinks=true,
+          linkcolor=linkcolor,
+          urlcolor=linkcolor,
+        }
+---
+
+\begin{center}
+  {\huge \bfseries \textcolor{textheader}{ {{ basics.name | upper }} }}\enspace
+  \href{mailto:{{ basics.email }} }{\textcolor{textheader}{\Large\faEnvelopeSquare}}\enspace
+  {% for profile in basics.profiles %}\href{ {{ profile.url }} }{\textcolor{textheader}{\Large\faLinkedinIn}}{% endfor %}
+\end{center}
+
+\vspace{5pt}
+{\color{textheader} \hrule height 1pt}
+\vspace{10pt}
+
+{{ letter_content }}
